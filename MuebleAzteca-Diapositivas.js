@@ -23,7 +23,7 @@ function handleImgClick(x, y, z) {
 function handleKeyDown(ev) {
     if (keyDown) return;
     keyDown = true;
-    if (ev.key == "ArrowRight") {
+    if (ev.key == "ArrowRight" || ev.key == " " || ev.key == "Enter") {
         slides[currentSlide].className = "outforward";
         // slides[currentSlide].style.display = "none";
         currentSlide++;
